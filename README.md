@@ -1,6 +1,6 @@
 # Site da Aldeia Consultoria Júnior
 
-Esse repositório contém os arquivos do site em produção da Aldeia Consultoria Júnior. A ideia é utilizá-lo como referência para projetos futuros, que as atualizações do site sejam salvas e documentadas aqui, e posteriormente enviadas para o servidor de produção via FTP.
+Esse repositório contém os arquivos do site em produção da Aldeia Consultoria Júnior. A ideia é utilizá-lo como referência para projetos futuros, e que as atualizações sejam salvas e documentadas para posteriormente serem enviadas para o servidor de produção via FTP.
 
 Alguns arquivos com senhas e configurações para acesso ao bancos de dados foram omitidos e devem ser baixados no **Drive da Aldeia** para garantir o funcionamento do site antes de realizar qualquer alteração.
 
@@ -19,12 +19,13 @@ Alguns arquivos com senhas e configurações para acesso ao bancos de dados fora
 
 # Enviando arquivos via FTP para o servidor da Aldeia
 1. Faça download de um cliente FTP (recomendo [Filezilla](https://filezilla-project.org/)).
-2. Faça login no serividor FTP da aldeia utilizando as credenciais do arquivo `FTP Aldeia` disponível na pasta `TI/Site da Aldeia/Senhas/`.
+2. Faça login no servidor FTP da aldeia utilizando as credenciais do arquivo `FTP Aldeia` disponível na pasta `TI/Site da Aldeia/Senhas/`.
 3. Envie os arquivos na *raiz* do servidor.
 
 # Equipe
 
-* **Rodrigo Franco** - *Trabalho inicial/Atualizações do site* - [rodrigoAMF](https://github.com/rodrigoAMF)
+* **Rodrigo Araújo Marinho Franco** - *Trabalho inicial/Atualizações do site* - [rodrigoAMF](https://github.com/rodrigoAMF)
+* **Vanessa Furtado** - *Atualizações do site* - [FurtadoVanessa](https://github.com/FurtadoVanessa)
 
 Veja também a lista de [contribuidores](https://github.com/AldeiaConsultoriaJr/site-aldeia/graphs/contributors) para ver todos os participantes deste projeto.
 
