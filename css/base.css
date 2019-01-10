@@ -5,7 +5,6 @@ html, body, .capa {
   height: 100%; }
 
 body {
-  background: url("../img/bg.jpg");
   background-clip: content-box;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
