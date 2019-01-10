@@ -86,7 +86,7 @@
             <li><a href="#sobre">Sobre nós</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="blog/">Blog</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
         </div>

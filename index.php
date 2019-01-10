@@ -1,16 +1,16 @@
-<?php require_once 'config.php'; ?>		
-<?php require_once 'funcoes.php'; ?>		
+<?php require_once 'config.php'; ?>
+<?php require_once 'funcoes.php'; ?>
 <?php require_once DBAPI; ?>
 
 
-<?php includeHeader("Null", 1) ?>	
-<?php 
-	$db = open_database(); 
+<?php includeHeader("Null", 1) ?>
+<?php
+	$db = open_database();
 	$posts = getLastThreePosts();
 	$projetos = getLastThreeProjects();
 ?>
-	
-	
+
+
 	<!-- Sobre nós -->
 	<section id="sobre">
 		<div class="container">
@@ -51,7 +51,7 @@
 			</div>
 		</div>
 	</section><!-- Sobre nós -->
-	
+
 	<section id="projetos">
 		<div class="container">
 			<div class="row cabecalho-secao">
@@ -94,7 +94,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section id="servicos">
 		<div class="container">
 			<div class="row cabecalho-secao">
@@ -147,7 +147,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section id="atualizacoes">
 		<div class="container">
 			<div class="row cabecalho-secao">
@@ -167,45 +167,6 @@
 			</div>
 		</div>
 	</section>
-			
-	
-	<section id="blog">
-		<div class="container">
-			<div class="row cabecalho-secao">
-				<div class="col-md-12">
-					<a href="<?= URL_BASE; ?>blog/" class="link-titulo-blog"><div class="titulo-secao branco">Blog</div>
-					<div class="subtitulo-secao branco">Clique para ir à página do blog</div></a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-6">
-					<div class="postagem-blog">
-						<img class="img-responsive img-blog" src="http://www.aldeiaconsultoriajr.com/blog/wp-content/uploads/2017/11/adminárvel-startups.jpg" alt="blog1">
-						<div class="titulo-postagem"><?= $posts[0]['post_title']; ?></div>
-						<div class="preview-postagem"><?= substr($posts[0]['post_content'], 0, 200); ?></div>
-						<a href="<?= $posts[0]['guid']; ?>"><div class="btn ver-mais-postagem">Ver Mais</div></a>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="postagem-blog">
-						<img class="img-responsive img-blog" src="http://www.aldeiaconsultoriajr.com/blog/wp-content/uploads/2017/11/depoimento.png" alt="blog1">
-						<div class="titulo-postagem"><?= $posts[1]['post_title']; ?></div>
-						<div class="preview-postagem"><?= substr($posts[1]['post_content'], 0, 200); ?></div>
-						<a href="<?= $posts[1]['guid']; ?>"><div class="btn ver-mais-postagem">Ver Mais</div></a>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-12">
-					<div class="postagem-blog">
-						<img class="img-responsive img-blog" src="http://www.aldeiaconsultoriajr.com/blog/wp-content/uploads/2017/11/empreenda-poços.jpg" alt="blog1">
-						<div class="titulo-postagem"><?= $posts[2]['post_title']; ?></div>
-						<div class="preview-postagem"><?= substr($posts[2]['post_content'], 0, 200); ?></div>
-						<a href="<?= $posts[2]['guid']; ?>"><div class="btn ver-mais-postagem">Ver Mais</div></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
 	<section id="contato">
 		<div class="container">
 			<div class="row cabecalho-secao">
@@ -253,5 +214,5 @@
 			</div>
 		</div>
 	</section>
-	
-<?php include(FOOTER_TEMPLATE); ?>	
+
+<?php include(FOOTER_TEMPLATE); ?>
