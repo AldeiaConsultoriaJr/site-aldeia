@@ -33,12 +33,12 @@
     <link rel="shortcut icon" type="image/png" href="http://aldeiaconsultoriajr.com/img/favicon.png"/>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
     <!-- CSS Base de todas as páginas -->
-    <link href="css/base.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
     <!-- CSS da página atual -->
-    <link href="css/ARQUIVO_CSS_PAGINA" rel="stylesheet">
+    <link href="/css/ARQUIVO_CSS_PAGINA" rel="stylesheet">
 
   <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
@@ -74,7 +74,7 @@
           </button>
 
           <a href="index.php" class="navbar-brand">
-            <img class="img-logo img-responsive" src="img/logo-menu.png" alt="Aldeia Consultoria Júnior">
+            <img class="img-logo img-responsive" src="/img/logo-menu.png" alt="Aldeia Consultoria Júnior">
           </a>
 
         </div>
