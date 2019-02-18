@@ -84,7 +84,9 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Início</a></li>
             <li><a href="#sobre">Sobre nós</a></li>
-            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#projetos">Projetos e Eventos</a></li>
+            <li><a href="http://teifesports.com">TEIF</a></li>
+            <li><a href="http://geotur.aldeiaconsultoriajr.com/">GeoTur</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="blog/">Blog</a></li>
             <li><a href="#contato">Contato</a></li>
