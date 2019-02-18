@@ -4,7 +4,7 @@
 function includeHeader($texto, $tipo){
   $header = file_get_contents(HEADER_TEMPLATE);
 
-  $pagina = basename($_SERVER['PHP_SELF'],'.php'); 
+  $pagina = basename($_SERVER['PHP_SELF'],'.php');
 
     if($pagina == "index"){
         $pagina = "home";
@@ -14,7 +14,7 @@ function includeHeader($texto, $tipo){
     $pagina = $pagina . '.css';
 
     // Se for uma página de projeto específico, reutiliza css da página projetos
-  if(($texto == "Geotur" || $texto == "Circuito Empreenda Poços" || $texto == "IF Portas Abertas" || $texto == "Eletro+" || $texto == "Pesquisa de Mercado") && $tipo == 2){
+  if(($texto == "Geotur" || $texto == "Circuito Empreenda Poços" || $texto == "IF Portas Abertas" || $texto == "Eletro+" || $texto == "Pesquisa de Mercado" || $texto == "Circuito Empreenda Poços 2 edição" || $texto == "De Bike em Poços" || $texto == "TEIF" || $texto == "Site da LUE") && $tipo == 2){
     $pagina = "projetos.css";
     $header = str_replace('ARQUIVO_CSS_PAGINA', $pagina , $header);
   }else if($pagina == "home.css" && $texto == "Projetos"){
@@ -23,7 +23,7 @@ function includeHeader($texto, $tipo){
   }else{
     $header = str_replace('ARQUIVO_CSS_PAGINA', $pagina , $header);
   }
-  
+
 
   if($tipo == 2){
 
@@ -33,7 +33,7 @@ function includeHeader($texto, $tipo){
     $header = str_replace('<li><a href="#servicos">', '<li><a href="' . URL_BASE . 'index.php#servicos">', $header);
     $header = str_replace('<li><a href="#blog">', '<li><a href="' . URL_BASE . 'index.php#blog">', $header);
     $header = str_replace('<li><a href="#contato">', '<li><a href="' . URL_BASE . 'index.php#contato">', $header);
-    
+
     $header = $header . '<!-- capa -->
           <div class="capa-secundaria">
             <div class="container">
@@ -45,7 +45,7 @@ function includeHeader($texto, $tipo){
 
           <div id="content" class="content-blog">
             <div class="container">';
-    
+
     $header = str_replace("%PAGE-TITLE%", $texto, $header);
   }else{
     $header = $header . '  <!-- capa -->
@@ -59,20 +59,20 @@ function includeHeader($texto, $tipo){
               </div><!-- container -->
             </div><!-- capa -->';
   }
-  
+
   echo $header;
 }
 
 function getLastThreePosts(){
   $conexao = open_wordpress_database();
   $query = "SELECT id, post_title, post_content, guid, post_status FROM wp_posts WHERE post_status = 'publish' ORDER BY id DESC LIMIT 3";
-  
+
   $resultado = $conexao->query($query);
-  
+
   $dados = $resultado->fetch_all(MYSQLI_ASSOC);
-  
+
   close_database($conexao);
-  
+
   return $dados;
 }
 
@@ -83,23 +83,29 @@ function getIdProjeto($projeto){
     return 2;
   }else if($projeto == "Pesquisa de Mercado"){
     return 3;
-  }else if($projeto == "Eletro+"){
-    return 4;
   }else if($projeto == "Circuito Empreenda Poços"){
     return 5;
+  }else if($projeto == "Circuito Empreenda Poços 2 edição"){
+    return 6;
+  }else if($projeto == "De Bike em Poços"){
+    return 7;
+  }else if($projeto == "Site da LUE"){
+    return 8;
+}else if($projeto == "TEIF"){
+    return 9;
   }
 }
 
 function getLastThreeProjects(){
   $conexao = open_database();
   $query = "SELECT * FROM projetos ORDER BY id DESC LIMIT 3";
-  
+
   $resultado = $conexao->query($query);
-  
+
   $dados = $resultado->fetch_all(MYSQLI_ASSOC);
-  
+
   close_database($conexao);
-  
+
   return $dados;
 }
 
@@ -111,23 +117,23 @@ function getProjeto($projeto){
   $query = "SELECT * FROM projetos where id = " . $id;
 
   $resultado = $conexao->query($query);
-  
+
   $dados = $resultado->fetch_all(MYSQLI_ASSOC);
-  
+
   close_database($conexao);
-  
+
   return $dados;
 }
 
 function getAllProjects(){
   $conexao = open_database();
   $query = "SELECT * FROM projetos ORDER BY id DESC";
-  
+
   $resultado = $conexao->query($query);
-  
+
   $dados = $resultado->fetch_all(MYSQLI_ASSOC);
-  
+
   close_database($conexao);
-  
+
   return $dados;
 }

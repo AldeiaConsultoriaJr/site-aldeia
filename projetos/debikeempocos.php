@@ -1,11 +1,11 @@
-<?php require_once '../config.php'; ?>		
-<?php require_once '../funcoes.php'; ?>		
+<?php require_once '../config.php'; ?>
+<?php require_once '../funcoes.php'; ?>
 <?php require_once DBAPI; ?>
 
 
-<?php includeHeader("Eletro+", 2) ?>	
-<?php $db = open_database(); 
-	$projeto = getProjeto("Eletro+");
+<?php includeHeader("De Bike em Poços", 2) ?>
+<?php $db = open_database();
+	$projeto = getProjeto("De Bike em Poços");
 ?>
 
 <?php
@@ -17,11 +17,11 @@
 			<div class="titulo-secundario">' . $projeto[0]["titulo"] . '</div>
 			<div class="texto-secundario">
 				<p class="recuo">' . $projeto[0]["descricao"] . '</p>
-			</div>	
+			</div>
 		</div>
 	</div>';
 
 ?>
 
 
-<?php include(FOOTER_TEMPLATE); ?>	
+<?php include(FOOTER_TEMPLATE); ?>
