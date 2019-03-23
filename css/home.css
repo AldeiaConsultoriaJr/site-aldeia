@@ -10,6 +10,16 @@
   text-align: center;
   color: #444; }
 
+.contatos {
+    font-size: 1.5em;
+    text-align: center;
+    color: #444; }
+
+    .fonte {
+      font-size: 0.5em;
+      text-align: center;
+      color: #444; }
+
 .espaco {
   padding-top: 30px; }
 

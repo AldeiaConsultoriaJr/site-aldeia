@@ -178,37 +178,8 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="contato-area pagination-centered">
-						<form class="form-horizontal" method="post" action="processa-contato.php">
-							<div class="form-group">
-								<label for="nome" class="col-sm-2 control-label">NOME</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="email" class="col-sm-2 control-label">EMAIL</label>
-								<div class="col-sm-10">
-									<input type="email" class="form-control" id="email" name="email" placeholder="Email">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="assunto" class="col-sm-2 control-label">ASSUNTO</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="assunto" name="assunto" placeholder="Assunto">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="mensagem" class="col-sm-2 control-label">MENSAGEM</label>
-								<div class="col-sm-10">
-									<textarea class="form-control" id="mensagem" name="mensagem" rows="5"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10 text-center">
-									<input type="submit" class="btn">
-								</div>
-							</div>
-						</form>
+					<img class="img-responsive" src="img/whatsapp.png" alt=""> (35) 3697-4969
+				
 					</div>
 				</div>
 			</div>
