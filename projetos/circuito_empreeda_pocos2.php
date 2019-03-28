@@ -13,7 +13,7 @@
 	echo '
 	<div class="row projeto">
 		<div class="col-md-12">
-			<img src="/' . $projeto[0]["img_url"] . '" alt="' . $projeto[0]["titulo"] . '" class="img-responsive img-descricao-projeto">
+			<img src="' . URL_BASE . $projeto[0]["img_url"] . '" alt="' . $projeto[0]["titulo"] . '" class="img-responsive img-descricao-projeto">
 			<div class="titulo-secundario">' . $projeto[0]["titulo"] . '</div>
 			<div class="texto-secundario">
 				<p class="recuo">' . $projeto[0]["descricao"] . '</p>

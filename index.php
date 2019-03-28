@@ -56,7 +56,7 @@
 		<div class="container">
 			<div class="row cabecalho-secao">
 				<div class="col-md-12">
-					<a href="/projetos"><div class="titulo-secao">Projetos</div>
+					<a href="projetos/"><div class="titulo-secao">Projetos</div>
 					<div class="subtitulo-secao">Clique para ver todos os nossos Projetos</div></a>
 				</div>
 			</div>
@@ -178,8 +178,8 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="contato-area pagination-centered">
-					<img class="img-responsive" src="img/whatsapp.png" alt=""> (35) 3697-4969
-				
+						<img class="img-responsive" src="img/whatsapp.png" alt=""> (35) 3697-4969
+
 					</div>
 				</div>
 			</div>

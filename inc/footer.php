@@ -1,6 +1,6 @@
-			
+
 		</div> <!-- Container -->
-	</div> <!-- Content -->	
+	</div> <!-- Content -->
 	<footer id="rodape">
 		<div class="container">
 			<div class="row">
@@ -25,7 +25,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<section id="creditos">
 		<div class="container">
 			<div class="row">
@@ -35,18 +35,18 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
-	
+
 	<!-- JS Base de todas as páginas -->
     <script src="js/base.js"></script>
 
     <?php
-    	$pagina = basename($_SERVER['PHP_SELF'],'.php'); 
+    	$pagina = basename($_SERVER['PHP_SELF'],'.php');
     	if($pagina == "index"){
     		echo "<!-- JS Página Home -->";
     		echo "<script src='js/home.js'></script>";

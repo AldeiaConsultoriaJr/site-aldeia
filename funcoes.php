@@ -23,6 +23,7 @@ function includeHeader($texto, $tipo){
   }else{
     $header = str_replace('ARQUIVO_CSS_PAGINA', $pagina , $header);
   }
+  $header = str_replace('%URL_BASE%', URL_BASE, $header);
 
 
   if($tipo == 2){
